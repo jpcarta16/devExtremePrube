@@ -2,12 +2,13 @@ import auth from "./auth";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import Home from "./views/home-page";
-import Prubes from "./views/prube-page"
-import Profile from "./views/profile-page";
 import Tasks from "./views/tasks-page";
-import Pies from "./views/pie-page";
 import defaultLayout from "./layouts/side-nav-inner-toolbar";
 import simpleLayout from "./layouts/single-card";
+import BeeAnimation from "./views/BeeAnimation"
+
+
+
 
 
 function loadView(view) {
@@ -26,15 +27,6 @@ const router = new createRouter({
       component: Home
     },
     {
-      path: "/profile",
-      name: "profile",
-      meta: {
-        requiresAuth: true,
-        layout: defaultLayout
-      },
-      component: Profile
-    },
-    {
       path: "/tasks",
       name: "tasks",
       meta: {
@@ -44,22 +36,13 @@ const router = new createRouter({
       component: Tasks
     },
     {
-      path: "/prubes",
-      name: "Prubes",
+      path: "/BeeAnimation",
+      name: "BeeAnimation",
       meta: {
         requiresAuth: true,
         layout: defaultLayout
       },
-      component: Prubes
-    },    
-    {
-      path: "/pies",
-      name: "Pies",
-      meta: {
-        requiresAuth: true,
-        layout: defaultLayout
-      },
-      component: Pies
+      component: BeeAnimation
     },
     {
       path: "/login-form",

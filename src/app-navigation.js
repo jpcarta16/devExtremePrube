@@ -17,12 +17,8 @@ export default [
         path: "/tasks"
       },
       {
-        text: "Pruebes",
-        path: "/prubes"
-      },
-      {
-        text: "Pies",
-        path: "/pies"
+        text: "BeeAnimation",
+        path: "/BeeAnimation"
       }
     ]
   }
