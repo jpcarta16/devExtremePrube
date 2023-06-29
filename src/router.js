@@ -8,9 +8,6 @@ import simpleLayout from "./layouts/single-card";
 import BeeAnimation from "./views/BeeAnimation"
 
 
-
-
-
 function loadView(view) {
   return () => import (/* webpackChunkName: "login" */ `./views/${view}.vue`)
 }
